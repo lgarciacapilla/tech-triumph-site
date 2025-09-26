@@ -48,7 +48,11 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" className="cta-button border-0 text-primary-foreground">
+            <Button 
+              size="lg" 
+              className="cta-button border-0 text-primary-foreground"
+              onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
+            >
               Explorar Modelos
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

@@ -52,13 +52,21 @@ const Navigation = () => {
             <Button variant="ghost" size="icon" className="hover:text-primary">
               <User className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary relative">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary relative"
+              onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
+            >
               <ShoppingCart className="w-5 h-5" />
               <span className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full flex items-center justify-center text-xs font-bold text-accent-foreground">
                 2
               </span>
             </Button>
-            <Button className="cta-button border-0 text-primary-foreground">
+            <Button 
+              className="cta-button border-0 text-primary-foreground"
+              onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
+            >
               Comprar Ahora
             </Button>
           </div>
@@ -99,12 +107,20 @@ const Navigation = () => {
                     <User className="w-4 h-4 mr-2" />
                     Cuenta
                   </Button>
-                  <Button variant="ghost" size="sm" className="hover:text-primary">
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="hover:text-primary"
+                    onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
+                  >
                     <ShoppingCart className="w-4 h-4 mr-2" />
                     Carrito (2)
                   </Button>
                 </div>
-                <Button className="w-full cta-button border-0 text-primary-foreground">
+                <Button 
+                  className="w-full cta-button border-0 text-primary-foreground"
+                  onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
+                >
                   Comprar Ahora
                 </Button>
               </div>

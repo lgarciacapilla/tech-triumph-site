@@ -148,6 +148,7 @@ const ProductShowcase = () => {
                   <Button 
                     className="flex-1 cta-button border-0 text-primary-foreground"
                     size="lg"
+                    onClick={() => window.open('https://amazon.com/smartphones', '_blank')}
                   >
                     <ShoppingCart className="w-4 h-4 mr-2" />
                     Comprar
